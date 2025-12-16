@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Text Formatter</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="taskpane.css"/>
+</head>
+<body>
+    <div id="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Text Formatter</h1>
+            <p class="subtitle">Format your selected text instantly</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="info-section">
+                <h2>What this does:</h2>
+                <ul>
+                    <li>Changes font to <strong>Times New Roman</strong></li>
+                    <li>Makes text <strong>Bold</strong></li>
+                </ul>
+            </section>
+
+            <section class="action-section">
+                <p class="instructions">Select some text in your document, then click the button below:</p>
+                
+                <!-- Format Text Button -->
+                <button id="format-button" class="ms-button">
+                    <span class="button-icon">✨</span>
+                    Format Text
+                </button>
+            </section>
+
+            <!-- Status Message Area -->
+            <div id="status-message" class="status-message hidden"></div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Select text and click to format</p>
+        </footer>
+    </div>
+
+    <!-- Task Pane JavaScript -->
+    <script src="taskpane.js"></script>
+</body>
+</html>
+
+
